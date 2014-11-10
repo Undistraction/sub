@@ -1,4 +1,4 @@
-/*! sub v0.0.1 – 10.11.2014 */
+/*! sub v0.0.2 – 10.11.2014 */
 
 // See: http://www.paulirish.com/2012/box-sizing-border-box-ftw
 // Apply a natural box layout model to all elements, but allowing components to change
@@ -11,7 +11,7 @@ html {
   box-sizing: inherit;
 }
 
-%button {
+%button-reset {
   display: block;
   border: none;
   cursor: pointer;
@@ -28,7 +28,7 @@ html {
 
 button,
 input[type="submit"] {
-  @extend %button;
+  @extend %button-reset;
 }
 
 // Adjusted from Foundation 5
