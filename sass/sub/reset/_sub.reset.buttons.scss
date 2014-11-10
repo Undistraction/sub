@@ -1,4 +1,4 @@
-%button {
+%button-reset {
   display: block;
   border: none;
   cursor: pointer;
@@ -15,5 +15,5 @@
 
 button,
 input[type="submit"] {
-  @extend %button;
+  @extend %button-reset;
 }
