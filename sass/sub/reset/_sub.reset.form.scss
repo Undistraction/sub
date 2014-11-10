@@ -1,0 +1,71 @@
+// Adjusted from Foundation 5
+
+// Adjust margin for form elements below
+input[type="file"],
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  border: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+select
+{
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+// Respect enforced row count set on element
+textarea[rows] {
+  height: auto;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+input,
+label {
+  display: block;
+}
+
+textarea {
+  resize:vertical;
+  height: auto;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: inline-block;
+  width: auto;
+
+  &+label
+  {
+    display: inline-block;
+    width: auto;
+  }
+}

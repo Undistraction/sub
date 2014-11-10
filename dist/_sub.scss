@@ -1,0 +1,194 @@
+/*! sub v0.0.0 – 10.11.2014 */
+
+// See: http://www.paulirish.com/2012/box-sizing-border-box-ftw
+// Apply a natural box layout model to all elements, but allowing components to change
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+%button {
+  display: block;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius:0;
+
+  &[disabled=disabled] {
+    cursor: not-allowed;
+  }
+}
+
+button,
+input[type="submit"] {
+  @extend %button;
+}
+
+// Adjusted from Foundation 5
+
+// Adjust margin for form elements below
+input[type="file"],
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  border: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+select
+{
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+// Respect enforced row count set on element
+textarea[rows] {
+  height: auto;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+input,
+label {
+  display: block;
+}
+
+textarea {
+  resize:vertical;
+  height: auto;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: inline-block;
+  width: auto;
+
+  &+label
+  {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  clear: both;
+  height: 0;
+  border: none;
+  border-top: 1px solid;
+  // Inherit 'color' propety
+  border-color: inherit
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle; // Remove whitespace
+  margin: 0;
+  height: auto;
+}
+
+figure > img
+{
+  display:block;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+
+  img
+  {
+    border:none;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 0;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+th,
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}

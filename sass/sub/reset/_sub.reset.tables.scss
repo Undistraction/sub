@@ -1,0 +1,23 @@
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 0;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+th,
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}

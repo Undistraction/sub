@@ -1,0 +1,19 @@
+%button {
+  display: block;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius:0;
+
+  &[disabled=disabled] {
+    cursor: not-allowed;
+  }
+}
+
+button,
+input[type="submit"] {
+  @extend %button;
+}
