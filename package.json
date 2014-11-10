@@ -1,7 +1,7 @@
 {
   "name": "Sub",
   "title": "Sub",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Sass Reset for use on-top of Normalize",
   "main": "dist/_sub.scss",
   "dependencies": {
